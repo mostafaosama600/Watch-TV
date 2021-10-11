@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+$mainColor: #131722;
+$secColor: steelblue;
+$thrColor: #fff;
+$frdColor: #a8a8a83d;
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: $mainColor !important;
+  color: $thrColor !important;
+}
+.secFColor {
+  color: $thrColor;
+}
+.brdr {
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: $frdColor;
+}
+.item {
+  position: relative;
+}
+.vote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  background-color: $secColor;
+}
+.item:hover img {
+  transform: scaleX(-1);
+  transition: all 0.5s ease-in-out;
+}
+.item:hover .vote {
+  background-color: $thrColor;
+  color: $secColor;
+  font-weight: bold;
+  transform: scale(1.2) !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+//
+.content-contact {
+  margin-top: 5rem !important;
+}
+.content-contact h2 {
+  color: $thrColor !important;
+}
+.content-contact p {
+  color: $thrColor !important;
+  font-weight: bolder !important;
+}
+.content-contact span {
+  color: $secColor !important;
+  font-weight: bolder !important;
+}
+.table {
+  background-color: $mainColor !important;
+  color: $thrColor !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+.table_Links h6 {
+  color: $secColor !important;
+  font-weight: bold !important;
+}
+.table_Links li .ancor-footer {
+  color: $thrColor !important;
+}
+.table_Links li .ancor-footer:hover {
+  color: $secColor !important;
+}
+.span {
+  color: $secColor !important;
+  font-size: 35px !important;
+  font-weight: bolder !important;
+}
+.search {
+  width: 200px !important;
+  height: 20px !important;
+  border: none !important;
+  outline: none !important;
+}
+::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+.desc {
+  color: $secColor !important;
+  font-weight: bolder !important;
+}
+.registeriton p,
+.about {
+  flex: 1 1 40rem;
+  animation: slideContent 0.5s linear 0.5s backwards;
+}
+@keyframes slideContent {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+    // -
+  }
+}
+.transformX {
+  flex: 1 1 40rem;
+  animation: slideAncho 0.5s linear 0.5s backwards;
+}
+@keyframes slideAncho {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+    // +
+  }
+}
+.oneLeft {
+  flex: 1 1 40rem;
+  animation: oneLeft 0.6s linear 0.6s backwards;
+}
+@keyframes oneLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+    // +
+  }
+}
+.twoLeft {
+  flex: 1 1 40rem;
+  animation: twoLeft 0.4s linear 0.4s backwards;
+}
+@keyframes twoLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+    // +
+  }
+}
+::selection {
+  background-color: $frdColor;
+  color: $secColor;
+}
+.threeLeft {
+  flex: 1 1 40rem;
+  animation: threeLeft 0.4s linear 0.4s backwards;
+}
+@keyframes threeLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-8rem);
+    // +
+  }
+}
+.fourLeft {
+  flex: 1 1 40rem;
+  animation: fourLeft 0.4s linear 0.4s backwards;
+}
+@keyframes fourLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem);
+    // +
+  }
+}
